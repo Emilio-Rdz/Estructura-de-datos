@@ -1,0 +1,12 @@
+asignaturas = []
+notas = []
+pase = []
+for i in range(5):
+    asignaturas.append(str(input("Introduce la asignatura: ")))
+for asignatura in asignaturas:
+    notas = float(input("Que nota has sacado en + asignatura + ?"))
+    if notas >= 70:
+        pase.append(asignatura)
+for asignatura in pase:
+    asignaturas.remove(asignatura)
+    print ("Tienes que repetir" + str(asignatura))
