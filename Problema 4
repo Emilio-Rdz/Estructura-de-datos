@@ -1,0 +1,23 @@
+ganadores = []
+lista = []
+mayor = 0
+menor = 0
+i = 1
+
+ for i in range(5):
+    lista.append(str(input("Introduce 5 numeros: ")))
+
+ while(len(ganadores) > 0):#faltaba comparar la  longitud de la lista con len 
+    numero = float(input("Numero #" + str(i) + ": "))
+    lista.append(numero)
+    i = i + 1
+    ganadores = ganadores - 1
+
+mayor = max(lista)
+menor = min(lista)
+
+ ganadores = int(input("Cuales son los numeros ganadores de la loteria primitiva: "))
+
+ print("Lista: ", lista)
+print("Mayor: ", mayor)
+print("Menor: ", menor)
