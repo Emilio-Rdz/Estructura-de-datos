@@ -1,0 +1,3 @@
+subject = ["Matemáticas", "Física", "Química", "Historia", "Lengua"]
+for subject in subject:
+    print("Yo estudio " + subject)
